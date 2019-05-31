@@ -26,8 +26,12 @@ $(document).ready(function(){
           title: $('#title1').val(),
           author: $('#author1').val(),
           description: $('#description1').val()
-
         }
+        createPost(data);
+  $('#form2').trigger('reset');
+  $('#form2').toggle();
+  e.preventDefault();
+});
 
     });
 

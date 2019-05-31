@@ -21,15 +21,15 @@ $(document).ready(function(){
 
 
     //create new post
-    $('#submitPost').on('click', function(e) {
+    $('#newSubmit').on('click', function(e) {
         let data = {
           title: $('#title1').val(),
           author: $('#author1').val(),
           description: $('#description1').val()
         }
         createPost(data);
-  $('#form2').trigger('reset');
-  $('#form2').toggle();
+  $('#createForm').trigger('reset');
+  $('#createForm').toggle();
   e.preventDefault();
 });
 function createPost(newData) {

@@ -15,30 +15,47 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     </head>
     <body>
-        <header>
-                <nav class="main-navigation">
-                        <div class="navbar-header animated fadeInUp">
-                            <a class="navbar-brand" href="#">DIN</a>
-                        </div>
-                
-                    </nav>  	
+            <header>
+                    <nav class="main-navigation">
+                            <div class="navbar-header animated fadeInUp">
+                                <a class="navbar-brand" href="#">DIN</a>
+                            </div>
+                            <ul class="nav-list">
+                                <li class="nav-list-item">
+                                    <a href="" class="nav-link">Create post</a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a href="index.html" class="nav-link">View Blog</a>
+                                </li>
+                                
+                                <li class="nav-list-item">
+                                    <a href="index.html" class="nav-link">Logout</a>
+                                </li>
+                            </ul>
                     
-                    <div class="absolute-wrapper"> </div>
-	<div class="side-menu">
-		<nav class="navbar navbar-default" role="navigation">
-			<div class="side-menu-container">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#"><span class="#"></span> Dashboard</a></li>
-					<li><a href="index.html"> Visit Blog</a></li>
-                    <li><a href="index.html">Log Out</a></li>
-				</ul>
-			</div>
-		</nav>
+                        </nav>
+            </header>
+            <div class="fadeInDown">                  
+                  
+                     
+                                <table class="table table-sm" id="table-list">
+                                        
+                                <thead>
+                                  <tr>
+                                    <th scope="col">id</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Author</th>
+                                    <th scope="col">Action</th>
+                                  </tr>
+                                </thead>  
+                                <tbody id="table-body">
 
-	</div>
-</div>  		
-</div>
-
+                                </tbody>
+                                 </table>
+                  
+                    </div>
+                  </div>
 
             <script src="assets/js/jquery-3.4.1.min.js"></script>
               <script src="assets/js/jquery/dist/jquery.validate.js"></script>

@@ -32,8 +32,19 @@ $(document).ready(function(){
   $('#form2').toggle();
   e.preventDefault();
 });
-
+function createPost(newData) {
+    $.ajax({
+      url: 'http://localhost:3000/posts',
+      method: 'POST',
+      data: newData,
+      success: function(data) {
+        console.log(data);
+        getPosts();
+      }
     });
+  }
+
+
 
 
 
